@@ -1,0 +1,36 @@
+body{
+	background: #355472;
+}
+.container{
+	margin: 50px;
+  background: gainsboro;
+}
+#gallery{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+#gallery.photos{
+	position: relative;
+	height: 400px;
+
+}
+#gallery.photos img{
+	position: absolute;
+	width: 100%;
+
+	left: 0;
+	opacity: 0;
+	transition:  3s ;
+
+}
+#gallery img.show{
+
+	opacity: 0.9;
+}
+.prev img{
+	transform: scale(-1, 1)
+}
+img{
+	height: 100%;
+}
